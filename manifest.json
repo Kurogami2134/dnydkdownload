@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Dueling Nexus YDK Downloader",
+  "version": "1.0",
+
+  "description": "Allows you to download decks from DuelingNexus.",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://duelingnexus.com/editor/*"],
+      "js": ["ydk_download.js"]
+    }
+  ],
+  
+  "permissions": [
+    "downloads"
+  ]
+}
